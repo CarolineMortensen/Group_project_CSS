@@ -42,14 +42,19 @@ and is wrapped around the whole page content, except for the footer in this exam
             href="https://oeil.secure.europarl.europa.eu/oeil/en" target="_blank">Legislative Observatory</a>
           <br><br>
       The goal is provide insights to how members work across legislative procedures and making collaborations across parties more transparent, focussing on trends within the procedures and which politicians are most influential.
+      <br><br>
+      <a href="https://nbviewer.org/github/CarolineMortensen/Group_project_CSS/blob/main/ProjectA.ipynb" target="_blank" class="w3-button w3-blue w3-margin-top">
+        View Notebook on NBViewer
+      </a>
         <br><br> <i> You can use the filters below to search for specific topics </i></p>
       </div>
+
     </div>
     <hr>
     <div class="w3-card w3-margin">
       <div class="w3-container w3-padding">
         <h4>Datasets can be downloaded here</h4>
-      </div>
+      </div> 
       <div class="w3-container w3-white">
         <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
         <a href="https://raw.githubusercontent.com/CarolineMortensen/Group_project_CSS/main/df_agri.csv" download style="color: inherit; text-decoration: none;">
@@ -125,11 +130,16 @@ and is wrapped around the whole page content, except for the footer in this exam
       <div class="w3-col l8 s12">
         <!-- Card 1: Network -->
         <div class="w3-card-4 w3-margin w3-white" data-tag="all">
+          <h1 style="margin-left: 18px">All Procedures</h1>
           <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
           <div class="w3-container">
             <h3><b>Who are connected with who?</b></h3>
-            <h5>Plot over links between members colored by political party</h5>
-            <p>Colored by something... From this you can see...</p>
+            <p>
+              Each link represents a collaboration between two members. 
+              A thresholding based on a minimum number of collaborations between members to avoid full connectivity. 
+              The larger the node, the more procedures a member has worked on. Nodes are colored by topic.
+              (See explainer notebook for full details and more in depth analysis and visualization)</p>
+
           </div>
         </div>
 
@@ -204,6 +214,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-col l8 s12">
       <!-- Card 1: Network -->
       <div class="w3-card-4 w3-margin w3-white" data-tag="Agriculture">
+        <h1 style="margin-left: 18px">Agriculture</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -214,7 +225,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
       <!-- Card 2: Communities -->
       <div class="w3-card-4 w3-margin w3-white" data-tag="Agriculture">
-        <img src="/images/agriculture_network.png" alt="Norway" style="width:100%">
+        <img src="/images/agri.png" alt="Norway" style="width:100%">
         <div class="w3-container">
           <h3><b>Communities</b></h3>
           <h5>These work together</h5>
@@ -278,6 +289,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Energy Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Energy">
+        <h1 style="margin-left: 18px">Energy</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -355,6 +367,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Enterprise Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Enterprise">
+        <h1 style="margin-left: 18px">Enterprise</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -430,6 +443,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Environmental Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Environmental">
+        <h1 style="margin-left: 18px">Environmental</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -506,6 +520,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Fisheries Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Fisheries">
+        <h1 style="margin-left: 18px">Fisheries</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -582,6 +597,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Industrial Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Industrial">
+        <h1 style="margin-left: 18px">Industrial</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -658,6 +674,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Information Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Information">
+        <h1 style="margin-left: 18px">Information</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -734,6 +751,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Research Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Research">
+        <h1 style="margin-left: 18px">Research</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
@@ -811,6 +829,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Transport Left Column -->
     <div class="w3-col l8 s12">
       <div class="w3-card-4 w3-margin w3-white" data-tag="Transport">
+        <h1 style="margin-left: 18px">Transport</h1>
         <img src="/images/Collected_and_filtered.png" alt="Her" style="width:100%">
         <div class="w3-container">
           <h3><b>Who are connected with who?</b></h3>
